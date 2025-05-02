@@ -33,7 +33,7 @@ Align fragment length distributions between experimental (query) and reference d
   ```
 
 **Visualization**  
-![Fragment Distribution](attachment:imagerence distribution)  
+![Fragment Distribution](images/Fragment_and_Rescaling.png)  
 *Purple: Query distribution*  
 *Blue stars: Subsamples from reference matching query's bin counts*
 
@@ -135,7 +135,7 @@ emit_prob = {
 → *6.2% improvement in likelihood*
 
 **State Path Visualization**  
-![State Path Comparison](attachment)
+![State Path Comparison](images/Viterbi.png)
 
 ---
 
@@ -156,6 +156,8 @@ emit_prob = {
   plt.hist2d(X, Y, bins=(100, 100), cmap='Blues')
   ```
 
+  ![V-Plot](images/V-Plot.png)
+
 **Biological Interpretation**  
 - V-shaped pattern signifies nucleosome positioning  
 - **X-axis**: Fragment center distances  
@@ -167,7 +169,9 @@ emit_prob = {
 ## Q6: Principal Component Analysis (PCA)
 
 **Gene Expression Patterns**  
-![PCA Plot](attachment)
+![PCA Plot](images/PCA-1.png)
+![PCA Plot](images/PCA-2.png)
+![PCA Plot](images/PCA-3.png)
 
 - **PC1 (87.6% variance)**:
   ```python
